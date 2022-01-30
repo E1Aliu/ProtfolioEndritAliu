@@ -1,0 +1,101 @@
+.nav{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around   ;
+    padding:0.2vw 5% 0;
+    height: 10%;
+    .menu-button, .sidebar-container{
+        display: none;
+    }
+    background-color: rgba(0, 0, 0, 0.253);
+}
+a {
+    text-decoration: None;
+    color:white;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.nav .nav-logo{
+    display: flex;
+    align-items: center;
+    .logo-container{
+        // content: url('../../../assets/shared/navbar/white-icon.svg');
+        width: max(33px, 2vw);
+        margin-right: max(5px, 0.5vw);
+    }
+    h6{
+        color:#fff;
+        font-size: max(20px, 1.35vw);
+    }
+}
+.nav .nav-links{
+    display: flex;
+    align-items: center;
+    .nav-link{
+        position: relative;
+        margin:0 max(2.5px, 0.7vw);
+    }
+    .inner-nav-link{
+        color:#fff;
+        display: flex;
+        align-items: center;
+        padding:2vw 0.5vw;
+        font-size: max(14px, 0.9vw);
+        position: relative;
+        z-index: 2;
+    }
+}
+.nav__sticky{
+    background:rgba(37, 34, 34, 0.219);
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    box-shadow: rgba(11, 11, 11, 0.2) 0px 2px 5px 0px;
+    height: 25px;
+    @media(max-width:1475px){
+        box-shadow: rgba(11, 11, 11, 0.1) 0px 1.75px 3.5px 0px;
+    }
+    .nav-logo{
+        .logo-container{
+            // content: url('../../../assets/shared/navbar/blue-icon.svg') !important;
+        }
+        h6{
+            color:#111 !important;
+        }
+    }
+    .nav-links{
+        .inner-nav-link{
+            color:#111 !important;
+        }
+    }
+    
+    // .nav-auth{
+    //     .search-button .inner-button{
+    //         color:#111 !important;
+    //     }
+    // }
+}
+
+.nav .mobile-nav{
+   display: none;
+}
+
+@media(max-width:1200px){
+    .nav .mobile-nav{
+        display: block;
+        background-color: red;
+    }
+    .nav{
+        height: 0;
+        padding:0;
+        .nav-logo, .nav-links, .nav-auth{
+            display: none;
+        }
+    }
+}

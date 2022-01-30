@@ -1,0 +1,54 @@
+.home-page{
+    
+    .AboutMe{
+        margin:5% 0 max(35px, 3vw);
+    padding:0 7.5%; 
+        h2{
+            padding-left:0.8%;
+            font-size: 2em;
+            color: rgb(175, 53, 53);
+            border:12px solid red;
+            text-align: left;
+            border-top: none;
+            border-right: none;
+            border-bottom: none;
+            background-color: rgba(0, 0, 0, 0.432);
+        }
+    
+    .Inline-about{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2%;
+    }
+    .img-me{
+        content: url('../../../../assets/Home/me.png');
+        width: 20%;
+        height: 20%;
+        border-radius: 100%;
+    }
+}
+}
+@media(max-width:570px) {
+    .AboutMe{
+        margin:0; 
+    
+    .Inline-about{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+    .Descripton{
+        width: 100%;
+    }
+    .img-me{
+        content: url('../../../../assets/Home/me.png');
+        width: 20%;
+        height: 20%;
+        border-radius: 100%;
+        margin: auto;
+    }
+}
+
+    
+}

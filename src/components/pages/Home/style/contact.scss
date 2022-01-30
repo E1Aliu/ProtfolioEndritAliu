@@ -1,0 +1,109 @@
+.home-page{
+    .Contact{
+        margin:5% 0 max(35px, 3vw);
+        padding:0 7.5%;
+        h3{
+            padding-left:0.8%;
+           font-size: 2em;
+           color: rgb(175, 53, 53);
+           border:12px solid red;
+           text-align: left;
+           border-top: none;
+           border-right: none;
+           border-bottom: none;
+           background-color: rgba(0, 0, 0, 0.432);
+       }
+       .Contactinline{
+           display: flex;
+           margin-top: 2%;
+       }
+       .ContactDesc{
+           width: 50%;
+       }
+       .ContactForm{
+           width: 50%;
+           .btn{
+               margin-left: 25%;
+               width: 10%;
+            //    text-align: center;
+
+           }
+           .form-group{
+               width: 100%;
+            //    display: flex;
+            //    align-content: space-around;
+            //    justify-content: space-around;
+            //    justify-content: center;
+               label{
+                   width: 25%;
+                   text-align:right;
+               }
+               input{
+                   width: 50%;
+                   padding:2%;
+                   margin:2% 5%;
+                   border:none;
+                   border-bottom: 2px solid rgba(104, 128, 104, 0.329);
+               }
+               textarea{
+                width: 50%;
+                padding:2%;
+                margin:2% 5%;
+                border:none;
+                border-bottom: 2px solid rgba(104, 128, 104, 0.329);
+
+               }
+           }
+       }
+    }
+}
+
+@media(max-width:700px) {
+    .home-page{
+        .Contact{
+           .Contactinline{
+               display: flex;
+               flex-wrap: wrap;
+           }
+           .ContactDesc{
+               width: 80%;
+           }
+           .ContactForm{
+               width: 90%;
+               .btn{
+                   margin-left: 25%;
+                   width: 10%;
+                //    text-align: center;
+    
+               }
+               .form-group{
+                   width: 100%;
+                //    display: flex;
+                //    align-content: space-around;
+                //    justify-content: space-around;
+                //    justify-content: center;
+                   label{
+                       width: 25%;
+                       text-align:right;
+                   }
+                   input{
+                       width: 50%;
+                       padding:2%;
+                       margin:2% 5%;
+                       border:none;
+                       border-bottom: 2px solid rgba(104, 128, 104, 0.329);
+                   }
+                   textarea{
+                    width: 50%;
+                    padding:2%;
+                    margin:2% 5%;
+                    border:none;
+                    border-bottom: 2px solid rgba(104, 128, 104, 0.329);
+    
+                   }
+               }
+           }
+        }
+    }
+    
+}
